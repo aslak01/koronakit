@@ -40,7 +40,12 @@
     .addAll(dataset || $data)
 </script>
 
-<div class="bg" on:mousemove={findItem} on:mouseout={() => (visible = false)} />
+<div
+  class="bg"
+  on:mousemove={findItem}
+  on:mouseout={() => (visible = false)}
+  on:blur={() => (visible = false)}
+/>
 <slot x={xGetter(found) || 0} y={yGetter(found) || 0} {found} {visible} {e} />
 
 <style>
