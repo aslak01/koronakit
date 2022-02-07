@@ -121,12 +121,6 @@
       {/each}
     </select>
   </label>
-  <label
-    >Translate countries: <input
-      type="checkbox"
-      bind:checked={$minidaySettings.navnOversatt}
-    /></label
-  >
 
   <!-- broken: -->
   <!-- <label>Sortert: <input type="checkbox" bind:checked={isSorted}></label> -->
