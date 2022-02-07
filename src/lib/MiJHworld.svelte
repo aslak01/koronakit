@@ -35,7 +35,6 @@
     }))
   }
   addNews()
-  // console.log(cases)
 
   $: range = $minidaySettings.range
   $: start = $minidaySettings.cut.start
@@ -127,9 +126,11 @@
   .enhet {
     position: relative;
     width: 300px;
+    padding: 5px;
     height: 150px;
     /* margin-right: auto; */
     justify-content: center;
+    overflow: hidden;
   }
   .chart {
     position: relative;

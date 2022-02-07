@@ -30,6 +30,8 @@
 
   // let index;
 
+  console.log(cData)
+
   let shavedData
   let currAvgIndex
   let MovingAverage
@@ -55,7 +57,8 @@
   let currInsidens = null
   let currAvg = null
 
-  let population = cData.population
+  let population =
+    cData.data.populationCounts[cData.data.populationCounts.length - 1]?.value
 
   $: MovingAverage = computeMovingAverage(
     data.data.new,
@@ -149,11 +152,11 @@
 <li on:mouseenter={enter} on:mouseleave={leave}>
   <div class="enhet">
     <div class="text">
-      {#if $minidaySettings.navnOversatt}
-        <h3 class="name">{oversettelse_en[0].name}</h3>
-      {:else}
-        <h3 class="name">{cData.nativeName}</h3>
-      {/if}
+      <!-- {#if $minidaySettings.navnOversatt} -->
+      <h3 class="name">{oversettelse_en[0].name}</h3>
+      <!-- {:else}
+        <h3 class="name">{cData.nativeName}</h3> -->
+      <!-- {/if} -->
       {#if hovering}
         <button class="del" on:click={destroy}>&#10005;</button>
       {/if}
