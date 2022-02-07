@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Eesti';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/GT-Eesti-Pro-Text-Medium.woff2') format('woff2'),
+    url('/fonts/GT-Eesti-Pro-Text-Medium.woff') format('woff'),
+    url('/fonts/GT-Eesti-Pro-Text-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Eesti';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/GT-Eesti-Pro-Text-Regular.woff2') format('woff2'),
+    url('/fonts/GT-Eesti-Pro-Text-Regular.woff') format('woff'),
+    url('/fonts/GT-Eesti-Pro-Text-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Eesti';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/GT-Eesti-Pro-Text-Book-Italic.woff2') format('woff2'),
+    url('/fonts/GT-Eesti-Pro-Text-Book-Italic.woff') format('woff'),
+    url('/fonts/GT-Eesti-Pro-Text-Book-Italic.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Eesti';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/GT-Eesti-Pro-Text-Bold.woff2') format('woff2'),
+    url('/fonts/GT-Eesti-Pro-Text-Bold.woff') format('woff'),
+    url('/fonts/GT-Eesti-Pro-Text-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Kristal';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/fonts/KristallNowPro-Medium.woff2') format('woff2'),
+    url('/fonts/KristallNowPro-Medium.woff') format('woff'),
+    url('/fonts/KristallNowPro-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Kristal';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/KristallNowPro-Regular.woff2') format('woff2'),
+    url('/fonts/KristallNowPro-Regular.woff') format('woff'),
+    url('/fonts/KristallNowPro-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Dunbar';
+  font-weight: 700;
+  src: url('/fonts/Dunbar_Text-Bold.woff2') format('woff2'),
+    url('/fonts/Dunbar_Text-Bold.woff') format('woff'),
+    url('/fonts/Dunbar_Text-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Dunbar';
+  font-weight: 400;
+  src: url('/fonts/Dunbar_Text-Regular.woff2') format('woff2'),
+    url('/fonts/Dunbar_Text-Regular.woff') format('woff'),
+    url('/fonts/Dunbar_Text-Regular.otf') format('opentype');
+}
+
+body {
+  background: ghostwhite;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+  font-family: 'Dunbar';
+  color: #212312;
+}
+input,
+button,
+select {
+  font-family: 'Eesti';
+}
+h1,
+h2 {
+  font-weight: 400;
+  font-family: Eesti;
+}
