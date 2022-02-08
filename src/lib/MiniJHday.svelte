@@ -152,11 +152,7 @@
 <li on:mouseenter={enter} on:mouseleave={leave}>
   <div class="enhet">
     <div class="text">
-      <!-- {#if $minidaySettings.navnOversatt} -->
       <h3 class="name">{oversettelse_en[0].name}</h3>
-      <!-- {:else}
-        <h3 class="name">{cData.nativeName}</h3> -->
-      <!-- {/if} -->
       {#if hovering}
         <button class="del" on:click={destroy}>&#10005;</button>
       {/if}

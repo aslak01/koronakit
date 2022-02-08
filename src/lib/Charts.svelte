@@ -62,7 +62,8 @@
 <Controls>
   {#if sortedCharts[0]}
     <h1 class="septheheading">
-      Average positive Covid tests {#if $minidaySettings.skala === 3}per 100k{/if}
+      Average daily positive Covid tests {#if $minidaySettings.skala === 3}per
+        100k{/if}
       the past {$minidaySettings.range} days
     </h1>
     <ol class="minidays">
